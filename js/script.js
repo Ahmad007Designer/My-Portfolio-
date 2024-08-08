@@ -57,14 +57,25 @@ var swiper = new Swiper(".mySwiper",{
     },
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const readMoreButtons = document.querySelectorAll(".read-more-btn");
 
-/*========== dark light mode ==========*/
-// let darkModeIcon =document.querySelector('#darkMode-icon');
+    readMoreButtons.forEach(button => {
+        button.addEventListener("click", function(e) {
+            e.preventDefault();
+            const description = this.previousElementSibling;
 
-// darkModeIcon.onclick = () => {
-//     darkModeIcon.classList.toggle('bx-sun');
-//     document.body.classList.toggle('dark-mode');
-// };
+            if (description.classList.contains("expanded")) {
+                description.classList.remove("expanded");
+                this.textContent = "Read More";
+            } else {
+                description.classList.add("expanded");
+                this.textContent = "Read Less";
+            }
+        });
+    });
+});
+
 
 
 /*========== scroll reveal ==========*/

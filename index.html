@@ -37,7 +37,7 @@
     <section class="home" id="home">
         <div class="home-content">
             <h3>Hi👋 I am</h3>
-            <h1>Ahmad Husain</h1>
+            <h1 id="typing-effect">Ahmad Husain</h1>
             <p> I am pursuing a B.Tech in my fourth year at the United Institute of Technology, Naini, Prayagraj. I specialize in Full Stack Web Development, and I am a quick learner. My technical skills include proficiency in HTML, CSS, JavaScript, and experience with the MERN stack (MongoDB, Express.js, React, Node.js). I am also familiar with version control systems like Git, and I have hands-on experience in building responsive and dynamic web applications
                 </p>
 
@@ -102,32 +102,31 @@
     <!-- services section design -->
     <div class="services" id="services">
         <h2 class="heading">My <span>Services</span></h2>
-
+    
         <div class="services-container">
             <div class="services-box">
                 <i class="bx bx-code-alt"></i>
                 <h3>Web Development</h3>
-                <p>Transform Your Ideas into a Captivating Digital Experience with Expert
-Website Development.</p>
-                    <a href="#" class="btn">Read More</a>
+                <p class="service-description">I specialize in creating responsive, user-friendly websites tailored to your unique needs and goals. Whether you need a sleek portfolio, a robust e-commerce platform, or a dynamic web application, I bring your vision to life with clean, efficient code and the latest technologies. From concept to launch, I focus on delivering a seamless experience that not only looks great but performs flawlessly across all devices. Let’s build a digital experience that captivates your audience and drives your success.</p>
+                <a href="#" class="btn read-more-btn">Read More</a>
             </div>
-
+    
             <div class="services-box">
                 <i class="bx bxs-paint"></i>
                 <h3>Graphic Design</h3>
-                <p>"Never fall in love with an idea. They’re whores: if the one you’re with isn’t doing the job, there’s always, always, always another.</p>
-                    <a href="#" class="btn">Read More</a>
+                <p class="service-description">Elevate your brand with stunning, impactful graphic design. I offer creative and professional graphic design services that bring your ideas to life, whether you need a new logo, eye-catching marketing materials, or visually compelling social media graphics. My designs are crafted to not only look amazing but to effectively communicate your message and resonate with your target audience. With a focus on aesthetics and functionality, I ensure that every design aligns with your brand’s identity and goals. Let’s create visuals that make a lasting impression and set your brand apart from the competition.</p>
+                <a href="#" class="btn read-more-btn">Read More</a>
             </div>
-
+    
             <div class="services-box">
                 <i class="bx bx-bar-chart-alt"></i>
                 <h3>Digital Marketing</h3>
-                <p>Drive Growth and Dominate the Digital Landscape with Strategic Digital Marketing Solutions.</p>
-                    <a href="#" class="btn">Read More</a>
+                <p class="service-description">I specialize in crafting tailored marketing campaigns that reach your target audience, boost engagement, and convert leads into loyal customers. From SEO and content marketing to social media management and paid advertising, I use data-driven insights to optimize every aspect of your digital strategy. Whether you're looking to increase brand awareness, generate more traffic, or improve your ROI, I’m here to help you navigate the digital landscape and achieve your business goals. Let’s work together to elevate your brand and dominate the digital space.</p>
+                <a href="#" class="btn read-more-btn">Read More</a>
             </div>
         </div>
     </div>
-
+    
     <!-- portfolio section design -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">Latest <span>Project</span></h2>
@@ -198,11 +197,8 @@ Website Development.</p>
     <!-- skills -->
     <section class="portfolio" id="portfolio">
         <h2 class="heading">My <span>Skills</span></h2>
-        </div>
-
         <div class="skill-main">
             <div class="skill-left">
-                <h3>Technical Skills</h3>
                 <div class="skill-bar">
                     <div class="info">
                         <p>HTML</p>
@@ -212,7 +208,7 @@ Website Development.</p>
                         <span class="html"></span>
                     </div>
                 </div>
-
+    
                 <div class="skill-bar">
                     <div class="info">
                         <p>CSS</p>
@@ -222,7 +218,7 @@ Website Development.</p>
                         <span class="css"></span>
                     </div>
                 </div>
-
+    
                 <div class="skill-bar">
                     <div class="info">
                         <p>JavaScript</p>
@@ -232,7 +228,7 @@ Website Development.</p>
                         <span class="javascript"></span>
                     </div>
                 </div>
-
+    
                 <div class="skill-bar">
                     <div class="info">
                         <p>SQL</p>
@@ -242,6 +238,7 @@ Website Development.</p>
                         <span class="sql"></span>
                     </div>
                 </div>
+    
                 <div class="skill-bar">
                     <div class="info">
                         <p>React</p>
@@ -261,22 +258,18 @@ Website Development.</p>
                         <span class="mdb"></span>
                     </div>
                 </div>
-
-            
             </div>
-
+    
             <div class="skill-right">
-                <!-- <h3>Languages</h3> -->
                 <div class="professional">
                     <div class="box">
-                            <img src="./images/skill.png" alt="">
-
+                        <img src="./images/skill.png" alt="">
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+    
 
 
     <!-- testimonial design -->
@@ -332,23 +325,21 @@ Website Development.</p>
     <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-
+    
         <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="e72cf68d-ca1c-4ea1-a924-9a1a9d682053">
             <div class="input-box">
-                <input type="hidden" name="access_key" value="e72cf68d-ca1c-4ea1-a924-9a1a9d682053">
                 <input type="text" name="name" placeholder="Full name" required>
                 <input type="email" name="email" placeholder="Email id" required>
+        
+                <input type="tel" name="number" placeholder="Mobile number" required>
+                <input type="text" name="address" placeholder="Your Address" required>
             </div>
-
-            <div class="input-box">
-                <input type="number" name="number" placeholder="Mobile number" required>
-                <input type="text" name="address"  placeholder=" Your Address" required>
-            </div>
-            <textarea name="message" id="" cols="30" rows="10" placeholder="your massge"></textarea>
-            <!-- <input type="submit" value="send message" class="btn"> -->
-            <button type="submit" class="btn">Submit Form</button>
+            <textarea name="message" cols="30" rows="10" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </section>
+    
 
     <!-- footer design -->
     <footer class="footer">
